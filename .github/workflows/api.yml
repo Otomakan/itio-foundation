@@ -14,8 +14,8 @@ jobs:
       - name: Build the itio f api Docker image
         run: |
           docker build ./api -t itio-f-api
-          docker tag itio-f-api 137.184.29.21:5000/itio-f-api 
-          docker push  137.184.29.21:5000/itio-f-api
+          docker tag itio-f-api 137.184.28.235:5000/itio-f-api 
+          docker push  137.184.28.235:5000/itio-f-api
       
       # - name: Log in to Docker Hub
       #   uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
