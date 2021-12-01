@@ -4,6 +4,8 @@ RUN mkdir -p  /usr/itio-f-api/node_modules
 # Setting working directory. All the path will be relative to WORKDIR
 WORKDIR /usr/itio-f-api
 
+COPY package*.json  ./
+
 RUN npm install
 
 # Copying source files
