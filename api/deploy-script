@@ -1,0 +1,4 @@
+
+docker build . -t itio-f-api
+docker tag itio-f-api 137.184.29.21:5000/itio-f-api 
+docker push  137.184.29.21:5000/itio-f-api
