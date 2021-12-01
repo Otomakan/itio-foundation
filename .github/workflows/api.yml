@@ -3,8 +3,8 @@ name: Publish Docker image
 
 on:
   pull_request:
-    paths:
-      - "api/**"
+    # paths:
+    #   - "api/**"
 
 jobs:
   push_to_registry:
