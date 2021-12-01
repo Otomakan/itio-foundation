@@ -1,0 +1,26 @@
+version: "3.1"
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: itio_foundation_postgres
+    environment:
+      POSTGRES_DB: itio_foundation_postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - itio_foundation_postgres:/var/lib/postgresql/data
+    shm_size: "256m"
+    ports:
+      - 5432:5432
+    networks:
+      - itio_foundation-network
+
+
+
+networks:
+  itio_foundation-network:
+    driver: bridge
+
+volumes:
+  itio_foundation_postgres:
